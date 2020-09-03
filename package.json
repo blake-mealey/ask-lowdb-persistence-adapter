@@ -1,6 +1,6 @@
 {
   "name": "ask-lowdb-persistence-adapter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An Alexa Skills Kit persistence adapter for Lowdb",
   "main": "src/index.js",
   "scripts": {
