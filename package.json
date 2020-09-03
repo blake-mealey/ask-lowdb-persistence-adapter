@@ -19,6 +19,11 @@
     "lowdb"
   ],
   "author": "Blake Mealey",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blake-mealey/ask-lowdb-persistence-adapter.git"
+  },
+  "homepage": "https://github.com/blake-mealey/ask-lowdb-persistence-adapter#readme",
   "license": "MIT",
   "peerDependencies": {
     "lowdb": "^1.0.0"
