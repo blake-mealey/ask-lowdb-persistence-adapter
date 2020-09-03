@@ -1,6 +1,9 @@
 # ASK Lowdb Persistence Adapter
 
-An Alexa Skills Kit persistence adapter for [lowdb](https://github.com/typicode/lowdb).
+An [Alexa Skills Kit](https://developer.amazon.com/en-US/alexa/alexa-skills-kit)
+[persistence
+adapter](https://developer.amazon.com/en-US/docs/alexa/alexa-skills-kit-sdk-for-nodejs/manage-attributes.html#persistenceadapter)
+for [lowdb](https://github.com/typicode/lowdb).
 
 ## Why?
 
