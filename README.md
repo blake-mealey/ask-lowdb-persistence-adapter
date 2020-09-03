@@ -60,7 +60,7 @@ const LowdbPersistenceAdapter = require("ask-lowdb-persistence-adapter");
 const S3PersistenceAdapter = require("ask-sdk-s3-persistence-adapter")
   .S3PersistenceAdapter;
 
-class PersistenceAdapterFactory() {
+class PersistenceAdapterFactory {
   constructor(s3BucketName) {
     this.s3BucketName = s3BucketName;
   }
@@ -68,7 +68,7 @@ class PersistenceAdapterFactory() {
   createPersistenceAdapter() {
     if (this.s3BucketName) {
       return new S3PersistenceAdapter({
-        bucketName: this.s3BucketName
+        bucketName: this.s3BucketName,
       });
     } else {
       return new LowdbPersistenceAdapter();
@@ -78,7 +78,9 @@ class PersistenceAdapterFactory() {
 
 // ...
 
-const persistenceAdapterFactory = new PersistenceAdapterFactory(process.env.S3_PERSISTENCE_BUCKET);
+const persistenceAdapterFactory = new PersistenceAdapterFactory(
+  process.env.S3_PERSISTENCE_BUCKET
+);
 
 Alexa.SkillBuilders.custom()
   .withPersistenceAdapter(persistenceAdapterFactory.createPersistenceAdapter())
